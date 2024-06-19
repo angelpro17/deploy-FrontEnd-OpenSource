@@ -1,0 +1,63 @@
+.custom-button {
+  background-color: #2dffca;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.custom-button:hover {
+  background-color: #000000;
+  color: white;
+}
+.container {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-gap: 10px;
+  padding: 30px;
+}
+
+.title, p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.taxi-image {
+  margin-top: 80px;
+}
+
+.most-visited {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #ABABAB;
+}
+
+.destination-image {
+  height: 150px;
+  width: 250px;
+  background-color: gold;
+  border-radius: 10px;
+
+}
+
+.bold {
+  font-weight: 600;
+}
+.estrella{
+  content: "★"; /* Utiliza el símbolo de estrella */
+  color: gold; /* Color de la estrella (amarillo) */
+  margin-right: 5px; /* Margen a la derecha de la estrella para separarla del texto */
+  font-size: 1.2em; /* Tamaño de la estrella */
+}

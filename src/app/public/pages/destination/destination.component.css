@@ -1,0 +1,21 @@
+.universities-list table {
+  border-collapse: collapse; /* Borde que une las celdas */
+  width: 100%; /* Ancho de la tabla al 100% */
+  margin: 20px auto; /* Margen superior e inferior de 20px y centrada horizontalmente */
+}
+
+.universities-list th, .universities-list td {
+  border: 1px solid #ddd; /* Borde de 1px gris claro para todas las celdas */
+  padding: 8px; /* Relleno de 8px en todas las celdas */
+  text-align: left; /* Alineación de texto a la izquierda */
+}
+
+.universities-list th {
+  background-color: #f0f0f0; /* Color de fondo gris claro para los encabezados */
+  font-weight: bold; /* Texto en negrita para los encabezados */
+}
+.universities-list img {
+  max-width: 90px;
+  height: auto;
+  margin: 0 5px;
+}

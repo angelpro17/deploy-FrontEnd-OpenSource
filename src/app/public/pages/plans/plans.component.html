@@ -1,0 +1,103 @@
+<app-toolbar></app-toolbar>
+<h1>Planes de subscripción</h1>
+<div class="card-container">
+  <section class="planes" id="planes">
+    <div class="pricing-wrapper clearfix">
+
+
+      <mat-card class="pricing-table">
+        <mat-card-title>Fremium</mat-card-title>
+        <mat-card-subtitle>S/. 0/mes</mat-card-subtitle>
+        <mat-card-content>
+          <p>dos viajes por dia</p>
+          <p>anuncios incluido</p>
+          <p>opciones limitadas</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="blue-button" (click)="onBuyClick()">Comprar</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="pricing-table recommended">
+        <mat-card-title>Premium conductor</mat-card-title>
+        <mat-card-subtitle>S/20.00/mes</mat-card-subtitle>
+        <mat-card-content>
+          <p>acumulación de puntos canjeables</p>
+          <p>personalizacion de precios en un rango determinado</p>
+          <p>notificaciones en tiempo real para mantener a los usuarios informados</p>
+          <p>reservas anticipadas para planificar viajes con anticipación</p>
+          <p>Mayor visibilidad como opción entre conductores</p>
+          <p>Acceso a eventos especiales para miembros premium</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="blue-button" (click)="onBuyClick()">Comprar</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="pricing-table recommended">
+
+        <mat-card-title>PREMIUM estudiante</mat-card-title>
+        <mat-card-subtitle>S/15.00/mes</mat-card-subtitle>
+
+        <mat-card-content>
+          <p>viajes ilimitados</p>
+          <p>Acumulación de puntos por viaje realizado</p>
+          <p>Puntos(2x)</p>
+          <p>Opción de reservar mas de un asiento</p>
+          <p>Llevar un acompañante 4 veces durante el mes</p>
+          <p>Participación en sorteos mensuales</p>
+          <p>calificación de conductores</p>
+          <p>Descuentos exclusivos en establecimientos afiliados</p>
+          <p>Acceso a eventos especiales para miembros premium</p>
+          <p>Atención al cliente prioritaria</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="blue-button" (click)="onBuyClick()">Comprar</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="payment-container" *ngIf="showPaymentCard">
+        <mat-card class="payment-card">
+          <mat-card-content>
+            <h2 class="title-details">Detalles de la Tarjeta</h2>
+            <div class="input-group">
+              <mat-form-field >
+                <input matInput placeholder="Número de Tarjeta" aria-label="Número de Tarjeta">
+              </mat-form-field>
+            </div>
+
+            <div class="input-group">
+              <mat-form-field>
+                <input matInput placeholder="MM/AA" aria-label="MM/AA">
+              </mat-form-field>
+              <mat-form-field >
+                <input matInput placeholder="CVV" aria-label="CVV">
+              </mat-form-field>
+            </div>
+
+            <div class="input-group">
+              <mat-form-field >
+                <input matInput placeholder="Correo Electrónico" aria-label="Correo Electrónico">
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+
+
+        </mat-card>
+        <div class="qr-code-container">
+          <h2>PAGA MÁS RÁPIDO </h2>
+          <h3 class="description-qr">Escanea este QR con la billetera electrónica de tu banco </h3>
+
+          <img src="../../../assets/img/qr-logo.png" alt="QR Code">
+        </div>
+
+        <mat-card-actions>
+          <button mat-raised-button color="blue-button" (click)="makePayment()">Realizar pago</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+  </section>
+</div>
+<app-footer></app-footer>

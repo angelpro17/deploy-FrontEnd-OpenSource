@@ -1,0 +1,26 @@
+<app-toolbar></app-toolbar>
+
+<div class="universities-list">
+  <h2>Lista de Universidades</h2>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Distrito</th>
+      <th>Ubicación</th>
+      <th>Logo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let university of serviceList">
+      <td>{{ university.nombre }}</td>
+      <td>{{ university.distrito }}</td>
+      <td>{{ university.ubicacion }}</td>
+      <td><img src="{{ university.logo }}" alt="{{ university.nombre }}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>
